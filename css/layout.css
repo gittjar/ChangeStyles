@@ -1,0 +1,169 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1rem;
+    background-color: ghostwhite;
+    font-size: 1.5rem;
+  }   
+
+  ul {
+    list-style: disc;
+    padding: 1rem 1rem 1rem 2rem;
+    list-style: 1.5;
+  }
+
+  li {
+    padding-left: 15px;
+  }
+
+  h1, h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+
+  table {
+    margin-bottom: 1rem;
+  }
+
+  tr {
+    line-height: 1.5;
+  }
+
+  td {
+    padding-right: 1rem;
+  }
+
+  #btn {
+    cursor: pointer;
+    border: 2px solid rgb(44, 44, 177);
+    background-color: navy;
+    height: 50px;
+    width: 200px;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 15px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}
+
+  /* CSS SÄÄÄNNÖT jotka lisätään JavaScriptin avulla */
+
+  .rivit-vierekkain-ul{
+    display: block;
+    width: auto;
+    background-color: rgb(191, 191, 191);
+    font-size: 1.4rem;
+    color: black;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+
+  .otsikot {
+    list-style: none;
+    font-size: 2rem;
+  } 
+
+  .dotted-links {
+    border-bottom: dotted 2px brown;
+    text-decoration: none;
+    color: brown;
+    font-size: 1.5rem;
+    font-weight: bold;
+   font-style: italic;
+  }
+
+.section-1-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.section-1-flex > * {
+    flex-basis: 0px;
+    flex-grow: 1;
+}
+
+/* tablen säädöt */
+
+.taulukko td, .taulukko tr {
+    border: 1px dashed black;
+    padding: 8px;
+}
+.taulukko tr:nth-child(even){background-color: #cccaca;}
+
+.taulukko tr:hover {background-color: #ddd;}
+
+.taulukko th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #3a3b3b;
+  color: white;
+}
+
+/* this is for all the link which end .pdf extension. so you don;t need jquery */
+/*
+a[href$='.pdf']  
+{  
+padding-left: 20px;  
+background: url(/shakespeares-plays/images/file-pdf-solid.svg) center left no-repeat;  
+} 
+*/
+/*
+a[href^="mailto:"]::after {
+  content: "⇱";
+}
+*/
+
+/*
+.new-tab::before {
+	display: inline-block;
+	content: "⇱";
+  
+ background-image: url('../images/arrow-up-right-from-square-solid.svg');
+ 
+	position: relative;
+	top: -5px;
+	margin-left: 5px;
+	transform: rotate(90deg); 
+}
+*/
+
+.pdf-ikoni::after{
+  display: inline-block;
+  content: ' ';
+  background-image: url('../images/file-pdf-solid.svg');
+  background-size: 15px 15px; 
+  height: 15px;
+  width: 15px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.new-tab::before{
+  display: inline-flex;
+  content: ' ';
+  background-image: url('../images/arrow-up-right-from-square-solid.svg');
+  background-size: 15px 15px; 
+  height: 15px;
+  width: 15px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.mailto-ikoni::after{
+  display: inline-flex;
+  content: ' '; 
+  background-image: url('../images/envelope-solid.svg');
+  background-size: 15px 15px; 
+  height: 15px;
+  width: 15px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+
+
+
